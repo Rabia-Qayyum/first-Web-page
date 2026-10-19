@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: #03386a;
+    color: white;
+    min-height: 50px;
+    padding: 8px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.logo h3 {
+    font-size: 18px;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo h3:hover {
+    color: #0a81dc;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #000000;
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 350px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        #2e699c,
+        #5c8a9f99,
+        #4a8aa822
+    );
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #c5d4decc;
+}
+
+.hero-content h1 {
+    margin-top: 0;
+}
+
+.hero-content p {
+    line-height: 1.6;
+}
+
+/* Explore Button */
+.explor-button {
+    display: inline-block;
+    background: rgb(89, 169, 196);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.explor-button:hover {
+    color: #151717;
+    opacity: 0.8;
+}
+
+/* Features and Video */
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 15px;
+}
+
+.our-features {
+    width: 50%;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.feature img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.feature p {
+    margin: 0;
+}
+
+/* Video */
+.video {
+    width: 50%;
+    background-color: #ecf1f5;
+    border-radius: 6px;
+}
+
+.video video {
+    width: 100%;
+    max-width: 300px;
+    height: 170px;
+    object-fit: cover;
+}
+
+/* Student Information */
+.student-info {
+    padding: 10px;
+    background: white;
+}
+
+.student-info h3 {
+    font-size: 16px;
+    color: #03386a;
+    margin-bottom: 8px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #2e699c;
+    border-collapse: collapse;
+    font-size: 12px;
+    text-align: left;
+}
+
+th {
+    background: #d9edf7;
+    color: #03386a;
+}
+
+th, td {
+    border: 1px solid #b9c9d9;
+    padding: 5px 9px;
+}
+
+td {
+    background: #ffffff;
+}
+
+/* Footer */
+#foter {
+    background: #03386a;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px 10px;
+    font-size: 14px;
+}
